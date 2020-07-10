@@ -271,7 +271,7 @@ html {
 
 body {
   background-color: #e7e7e7;
-  background-image: url("/assets/bg.jpg");
+  background-image: url("./assets/bg.jpg");
   background-repeat: repeat;
   font-family: "Unica One", sans-serif;
   text-transform: uppercase;
