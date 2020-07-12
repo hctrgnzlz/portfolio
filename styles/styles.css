@@ -270,7 +270,7 @@ html {
 }
 
 body {
-  background-image: url("./backgrounds/bg.jpg");
+  background-image: url("/assets/backgrounds/bg.jpg");
   background-color: #e7e7e7;
   background-repeat: repeat;
   font-family: "Unica One", sans-serif;
@@ -422,7 +422,7 @@ body {
   opacity: 1;
   height: 50vh;
   min-width: 60vh;
-  background-image: url("./backgrounds/contact.gif");
+  background-image: url("/assets/backgrounds/contact.gif");
   background-repeat: no-repeat;
   background-size: 200px;
   background-position: 90% 10%;
