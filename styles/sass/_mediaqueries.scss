@@ -65,17 +65,5 @@
       font-size: 22px;
       margin: 0;
     }
-
-    &__link {
-      display: block;
-      color: #000000;
-      transition: all 0.3s ease-in;
-      padding-top: 5px;
-      padding-bottom: 5px;
-    }
-
-    &__link:hover {
-      border-bottom: 3px solid $highlight-color;
-    }
   }
 }

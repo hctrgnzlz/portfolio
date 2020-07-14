@@ -4,10 +4,11 @@
 $font: "Unica One", sans-serif;
 
 //backgrounds//
-$bg: "./assets/backgrounds/bg.jpg";
-$bgdark: "/assest/backgrounds/bgdark.jpg";
-$contact: "/assets/backgrounds/contact.gif";
-$about: "./assets/backgrounds/about.png";
+$bg: "../assets/backgrounds/bg.jpg";
+$bgdark: "../assets/backgrounds/bgdark.jpg";
+$contact: "../assets/backgrounds/contact.gif";
+$about: "../assets/backgrounds/about.png";
+$flamingos: "../assets/backgrounds/flamingos.jpg";
 
 //colors//
 $font-color: #333333;
@@ -15,3 +16,5 @@ $subheading-color: #999999;
 $bg-color: #e7e7e7;
 $border-color: #dadada;
 $highlight-color: #f93959;
+$nyxl-red: #d42331;
+$nyxl-blue: #141b3b;
