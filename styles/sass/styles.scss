@@ -260,11 +260,12 @@ body {
 }
 
 .about {
-  height: 100vh;
+  height: 150vh;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  overflow: hidden;
 
   &__content {
     margin-top: 200px;
