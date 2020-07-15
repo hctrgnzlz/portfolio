@@ -121,6 +121,15 @@
 
   /* Landscape phones and down */
   @media (max-width: 480px) {
+    .secret {
+      &__title::before {
+        width: 75%;
+      }
+    }
+    .secret.active {
+      height: 50vh;
+      min-width: 50vh;
+    }
     .work {
       &__skills {
         &__item {
@@ -128,10 +137,6 @@
           margin: 0 5px 5px;
         }
       }
-      // &__gallery {
-      //   &__item {
-      //     width: calc(100% / 1 - 20px);
-      //   }
     }
   }
 }
