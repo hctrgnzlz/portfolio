@@ -18,8 +18,8 @@
 }
 
 .sub {
-  color: rgb(100, 220, 220);
-  letter-spacing: 1em;
+  color: $font-color;
+  letter-spacing: 10px;
 }
 
 @mixin glitchCopy {
@@ -81,5 +81,11 @@
     #{percentage($i*(1/$steps))} {
       transform: skew((random(10) - 5) + deg);
     }
+  }
+}
+
+@media (max-width: 600px) {
+  .glitch {
+    font-size: 45px;
   }
 }

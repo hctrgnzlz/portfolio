@@ -1,5 +1,18 @@
 //MEDIA QUERIES STARTS//
-@media (max-width: 900px) {
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  .about {
+    &__content {
+      &__text {
+        font-size: 18px;
+      }
+      &__img {
+        height: 450px;
+      }
+    }
+  }
+
   #logo {
     opacity: 1;
     width: 150px;
@@ -64,6 +77,61 @@
       padding: 10px 0;
       font-size: 22px;
       margin: 0;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .about {
+    &__content {
+      &__text {
+        font-size: 15px;
+      }
+    }
+  }
+  .work {
+    &__skills {
+      &__item {
+        width: calc(100% / 3 - 20px);
+      }
+    }
+    &__gallery {
+      &__item {
+        width: calc(100% / 1 - 20px);
+      }
+    }
+  }
+
+  @media (max-width: 500px) {
+    .about {
+      &__content {
+        margin-top: 100px;
+        flex-direction: column;
+        &__text {
+          font-size: 18px;
+        }
+        &__img {
+          margin-top: 20px;
+          height: 300px;
+          border: $border-color 1px solid;
+        }
+      }
+    }
+  }
+
+  /* Landscape phones and down */
+  @media (max-width: 480px) {
+    .work {
+      &__skills {
+        &__item {
+          width: calc(100% / 2 - 10px);
+          margin: 0 5px 5px;
+        }
+      }
+      // &__gallery {
+      //   &__item {
+      //     width: calc(100% / 1 - 20px);
+      //   }
     }
   }
 }
