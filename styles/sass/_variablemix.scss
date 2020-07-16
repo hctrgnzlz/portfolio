@@ -1,4 +1,4 @@
-//VARIABLES//
+//VARIABLES & MIXINS//
 
 //fonts//
 $font: "Unica One", sans-serif;
@@ -18,3 +18,29 @@ $border-color: #dadada;
 $highlight-color: #f93959;
 $nyxl-red: #d42331;
 $nyxl-blue: #141b3b;
+
+//mixins//
+@mixin headerbg {
+  background-color: $highlight-color;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px;
+  position: absolute;
+}
+
+@mixin headertxt {
+  color: $highlight-color;
+  position: absolute;
+  font-size: 20px;
+}
+
+@mixin bg {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  opacity: 0.3;
+  z-index: -1;
+}

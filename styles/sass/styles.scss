@@ -1,5 +1,5 @@
 @import "setup";
-@import "variables";
+@import "variablemix";
 @import "glitch";
 
 body {
@@ -15,7 +15,6 @@ body {
 .wrapper {
   width: 80%;
   margin: 0 auto;
-  // padding-top: 100px;
 }
 
 //NAVIGATION STYLES//
@@ -106,7 +105,6 @@ body {
 }
 .eye:hover {
   opacity: 1;
-  // filter: drop-shadow(0px 0px 0.1px);
   transform: scale(1.1);
 }
 .eye.active {
@@ -180,7 +178,7 @@ body {
   position: absolute;
   padding: 20px;
   top: -90px;
-  left: 0px;
+  left: -50px;
   transition: 1s;
 }
 
@@ -225,21 +223,15 @@ body {
     }
 
     &__date {
-      color: #ffffff;
-      background-color: $highlight-color;
-      padding: 10px 20px;
-      position: absolute;
+      @include headerbg;
       top: -40px;
       left: 30px;
     }
 
     &__local {
-      color: $highlight-color;
-      // background-color: white;
-      padding: 10px 20px;
-      position: absolute;
-      bottom: -45px;
-      right: 10px;
+      @include headertxt;
+      bottom: -30px;
+      right: 40px;
     }
   }
 }
@@ -247,29 +239,20 @@ body {
 //ABOUT STYLES//
 
 .about::before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
   background: url($about);
-  background-size: cover;
-  background-position: center center;
-  opacity: 0.3;
-  z-index: -1;
+  @include bg;
 }
 
 .about {
   height: 130vh;
   position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   overflow: hidden;
 
   &__content {
-    margin-top: 200px;
-    text-transform: uppercase;
     display: flex;
     border: $border-color solid 1px;
     position: relative;
@@ -279,22 +262,10 @@ body {
       font-size: 20px;
     }
 
-    &__first {
-      color: #ffffff;
-      background-color: $highlight-color;
-      padding: 5px 10px;
-      position: absolute;
-      bottom: -50px;
-      left: 30px;
-    }
-
-    &__last {
-      color: $highlight-color;
-      // background-color: white;
-      padding: 10px 20px;
-      position: absolute;
+    &__user {
+      @include headerbg;
       top: -45px;
-      right: 15px;
+      left: 15px;
     }
 
     &__img {
@@ -305,10 +276,7 @@ body {
       padding: 0;
     }
   }
-}
 
-//PORTFOLIO GALLERY STARTS///
-.work {
   &__skills {
     margin: 100px 0 100px 0;
     text-align: center;
@@ -326,8 +294,8 @@ body {
     }
 
     &__item {
-      width: calc(100% / 5 - 20px);
-      margin: 0 10px 10px;
+      width: calc(100% / 5 - 10px);
+      margin: 0 5px 5px;
       padding: 0;
       position: relative;
       align-items: center;
@@ -345,16 +313,24 @@ body {
     }
 
     &__text {
+      font-size: 20px;
       margin: 10px;
     }
 
     &__txt {
-      color: $highlight-color;
-      position: absolute;
-      top: -35px;
-      right: 30px;
+      @include headertxt;
+      top: -28px;
+      left: 30px;
     }
   }
+}
+
+//PORTFOLIO GALLERY STARTS///
+.work {
+  margin: 100px 0 100px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &__gallery {
     margin: 30px 0 30px 0;
@@ -411,29 +387,16 @@ body {
     }
 
     &__txt {
-      color: #ffffff;
-      background-color: $highlight-color;
-      padding: 5px 10px;
-      position: absolute;
-      bottom: -40px;
+      @include headerbg top: -40px;
       left: 30px;
     }
   }
 }
 
 //CONTACT SECTION//
-
 .contact::before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
+  @include bg;
   background: url($flamingos);
-  background-size: cover;
-  background-position: center center;
-  opacity: 0.2;
-  z-index: -1;
 }
 
 .contact {
@@ -450,7 +413,6 @@ body {
   }
 
   &__icons {
-    // border: yellow 2px solid;
     & a {
       text-decoration: none;
       color: $font-color;
@@ -459,6 +421,15 @@ body {
 
     & a:hover {
       color: $highlight-color;
+    }
+
+    & span a {
+      color: #000000;
+      font-size: 35px;
+    }
+
+    & span a:hover {
+      color: $nyxl-red;
     }
   }
 }

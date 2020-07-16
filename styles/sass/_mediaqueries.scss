@@ -11,6 +11,11 @@
         height: 450px;
       }
     }
+    &__skills {
+      &__text {
+        font-size: 15px;
+      }
+    }
   }
 
   #logo {
@@ -88,13 +93,16 @@
         font-size: 15px;
       }
     }
-  }
-  .work {
     &__skills {
       &__item {
         width: calc(100% / 3 - 20px);
       }
+      &__text {
+        font-size: 13px;
+      }
     }
+  }
+  .work {
     &__gallery {
       &__item {
         width: calc(100% / 1 - 20px);
@@ -106,14 +114,12 @@
     .about {
       &__content {
         margin-top: 60px;
-        flex-direction: column;
+        padding: 20px;
         &__text {
-          font-size: 18px;
+          font-size: 15px;
         }
         &__img {
-          margin-top: 20px;
-          height: 300px;
-          border: $border-color 1px solid;
+          display: none;
         }
       }
     }
@@ -130,13 +136,19 @@
       height: 50vh;
       min-width: 50vh;
     }
-    .work {
+    .about {
+      height: 150vh;
       &__skills {
+        margin-top: 40px;
         &__item {
           width: calc(100% / 2 - 10px);
-          margin: 0 5px 5px;
+          margin: 0 3px 5px;
         }
       }
+    }
+
+    .about::before {
+      background-position: right;
     }
   }
 }
