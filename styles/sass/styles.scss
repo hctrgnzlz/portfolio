@@ -17,6 +17,10 @@ body {
   margin: 0 auto;
 }
 
+a {
+  text-decoration: none;
+}
+
 //NAVIGATION STYLES//
 .nav {
   display: flex;
@@ -43,24 +47,15 @@ body {
   }
 
   &__link {
-    color: $font-color;
-    text-decoration: none;
-    position: relative;
+    @include link;
   }
 
   &__link::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 10%;
-    width: 90%;
-    height: 55%;
-    z-index: -1;
+    @include linkafter;
   }
 
   &__link:hover::after {
-    background: rgba(249, 0, 0, 0.3);
-    transition: all 0.5s ease-out;
+    @include linkhover;
   }
 
   &__toggle span,
@@ -332,6 +327,16 @@ body {
   justify-content: center;
   align-items: center;
 
+  &__pillar {
+    width: 80%;
+
+    &--top {
+      transform: rotate(-180deg);
+      width: 80%;
+      margin-bottom: 20px;
+    }
+  }
+
   &__gallery {
     margin: 30px 0 30px 0;
     align-items: center;
@@ -350,7 +355,7 @@ body {
     }
 
     &__item {
-      width: calc(100% / 2 - 40px);
+      width: calc(100% / 1 - 40px);
       margin: 0 20px 50px;
       padding: 0;
       position: relative;
@@ -361,9 +366,23 @@ body {
       text-align: center;
     }
 
-    &__title {
-      font-size: 25px;
-      margin: 0;
+    &__icon {
+      width: 20%;
+      margin-bottom: 15px;
+    }
+
+    &__link {
+      @include link;
+      font-size: 35px;
+      font-weight: 600;
+    }
+
+    &__link::after {
+      @include linkafter;
+    }
+
+    &__link:hover::after {
+      @include linkhover;
     }
 
     &__text {
@@ -401,7 +420,7 @@ body {
 
 .contact {
   position: relative;
-  height: 100vh;
+  height: 120vh;
 
   &__content {
     height: 100%;
@@ -410,6 +429,11 @@ body {
     align-items: center;
     justify-content: space-between;
     text-align: center;
+  }
+
+  &__mail {
+    width: 10%;
+    margin-top: 300px;
   }
 
   &__icons {
@@ -425,7 +449,7 @@ body {
 
     & span a {
       color: #000000;
-      font-size: 35px;
+      font-size: 75px;
     }
 
     & span a:hover {

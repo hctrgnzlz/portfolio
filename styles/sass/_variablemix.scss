@@ -20,6 +20,28 @@ $nyxl-red: #d42331;
 $nyxl-blue: #141b3b;
 
 //mixins//
+
+@mixin link {
+  color: $font-color;
+  text-decoration: none;
+  position: relative;
+}
+
+@mixin linkafter {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 10%;
+  width: 90%;
+  height: 55%;
+  z-index: -1;
+}
+
+@mixin linkhover {
+  background: rgba(249, 0, 0, 0.3);
+  transition: all 0.5s ease-out;
+}
+
 @mixin headerbg {
   background-color: $highlight-color;
   color: #ffffff;
