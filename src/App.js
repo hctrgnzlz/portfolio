@@ -1,5 +1,5 @@
 import { ThemeProvider } from "styled-components";
-import Navbar from "./Navbar";
+import Navbar from "./components/Navbar";
 import Switch from "./components/Switch";
 import Home from "./pages/Home";
 import Work from "./pages/Work";

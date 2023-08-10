@@ -1,7 +1,7 @@
 import styled, { ThemeProvider } from "styled-components";
 
 import MoonIcon from "./components/icons/MoonIcon";
-import SunIcon from "./components/icons/SunIcon";
+import SunIcon from "./assets/PowerIcon";
 import Switch from "./components/Switch";
 import { Title } from "./components/styles/switch.styled";
 import { Info } from "./components/styles/switch.styled";

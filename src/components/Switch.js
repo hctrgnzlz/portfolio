@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Switch.css";
-import SunIcon from "./icons/SunIcon";
+import PowerIcon from "../assets/PowerIcon";
 
 
 function Switch({toggleTheme, isDarkTheme}) {
@@ -15,7 +15,7 @@ function Switch({toggleTheme, isDarkTheme}) {
     <>
     <label className="toggle-switch">
       <input type="checkbox" checked={isToggled} onChange={onToggle} />
-      <SunIcon/>
+      <PowerIcon/>
     </label>
     </>
   );

@@ -1,5 +1,5 @@
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
-import { StyledNav } from "./components/styles/global.styled";
+import { StyledNav } from "./styles/global.styled";
 
 export default function Navbar(){
   return <StyledNav>
