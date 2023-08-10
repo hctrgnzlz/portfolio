@@ -1,17 +1,16 @@
-import { useImperativeHandle } from "react";
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
+import { StyledNav } from "./components/styles/global.styled";
 
 export default function Navbar(){
-  return <nav className ="nav">
-    <Link to="/" className="site-title"> Site Name</Link>
+  return <StyledNav>
+    <Link to="/" className="site-title"> HTCR ></Link>
     <ul>
+    
+       <CustomLink to="/">Home</CustomLink>
       <CustomLink to="/about">About</CustomLink>
-      <CustomLink to="/work">Work</CustomLink>
-      <CustomLink to="/contact">Contact</CustomLink>
-
      
     </ul>
-  </nav>
+  </StyledNav>
 }
 
 function CustomLink ({ to, children, ...props }) {

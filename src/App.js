@@ -1,27 +1,37 @@
+import styled, { ThemeProvider } from "styled-components";
 import Navbar from "./Navbar";
+import Switch from "./components/Switch";
 import Home from "./pages/Home";
-import About from "./pages/About";
 import Work from "./pages/Work";
-import Contact from "./pages/Contact";
 import { Route, Routes } from "react-router-dom";
-
-
-
+import { useState } from "react";
+import { StyledApp, darkTheme, lightTheme } from "./components/styles/global.styled";
 
 
 function App() {
+  const [theme, setTheme] = useState("dark");
+  const isDarkTheme = theme === "dark";
+
+  const toggleTheme = () => {
+    setTheme(isDarkTheme ? "light" : "dark")
+  }
+  
   return (
     <>
-      <Navbar />
-      <div className="container">
-       <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/work" element={<Work />} />
-          <Route path="/contact" element={<Contact />} />
-       </Routes>
-      </div>
-    </>
+    <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
+      <StyledApp>
+        <Navbar />
+          <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/" element={<Home />} />
+              <Route path="/work" element={<Work />} />
+          </Routes>
+       <div className="container">
+        <Switch toggleTheme={toggleTheme} isDarkTheme={isDarkTheme} />
+        </div>
+      </StyledApp>
+    </ThemeProvider>
+  </>
   
   )
 }
