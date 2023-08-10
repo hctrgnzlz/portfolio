@@ -6,8 +6,8 @@ export default function Navbar(){
     <Link to="/" className="site-title"> HTCR ></Link>
     <ul>
     
-       <CustomLink to="/">Home</CustomLink>
-      <CustomLink to="/about">About</CustomLink>
+      <CustomLink to="/">Home</CustomLink>
+      <CustomLink to="/work">Work</CustomLink>
      
     </ul>
   </StyledNav>

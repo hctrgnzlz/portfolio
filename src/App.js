@@ -1,4 +1,4 @@
-import styled, { ThemeProvider } from "styled-components";
+import { ThemeProvider } from "styled-components";
 import Navbar from "./Navbar";
 import Switch from "./components/Switch";
 import Home from "./pages/Home";
