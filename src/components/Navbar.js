@@ -1,9 +1,10 @@
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
 import { StyledNav } from "./styles/global.styled";
+import { Title } from "./styles/global.styled";
 
 export default function Navbar(){
   return <StyledNav>
-    <Link to="/" className="site-title"> HTCR ></Link>
+    <Link to="/" className="site-title"> <Title>HTCR </Title> </Link>
     <ul>
     
       <CustomLink to="/">Home</CustomLink>

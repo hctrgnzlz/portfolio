@@ -2,25 +2,23 @@ import styled from "styled-components";
 
 
 export const darkTheme = {
-  body: "#1c1c1c",
-  title: "#fff",
+  body: "#282828",
+  header: "#3c3836",
+  title: "#ebdbb2",
   subtitle: "#b6b6b6",
   icon: "#b6b6b6",
-  lame: "red",
   active: "blue",
-  hover: "green",
-  font: "#FFFFFF"	
+  font: "#bdae93",	
 }
 
 export const lightTheme = {
-  body: "#fff",
-  title: "#1c1c1c",
+  body: "#fbf1c7",
+  header: "#ebdbb2",
+  title: "#3c3836",
   subtitle: "#333",
-  icon: "#1c1c1c",
-  lame: "pink",
+  icon: "#282828",
   active: "yellow",
-  hover: "pink",
-  font: "#000000"
+  font: "#665c54",
 }
 
 
@@ -30,12 +28,13 @@ export const StyledApp = styled.div`
   background-color: ${(props)=> props.theme.body};
   height: 100vh;
   transition: all 0.25s ease;
+
 `;
 
 
 export const Title = styled.h1`
   margin: 1rem;
-  color: ${(props)=> props.theme.lame};
+  color: ${(props)=> props.theme.title};
 `;
 
 export const Info = styled.p`
@@ -49,9 +48,11 @@ export const StyledNav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: stretch;
+  background-color: ${(props)=> props.theme.header};
   gap: 2rem;
   padding: 0 1rem;
   height: 50px;
+    
   ul {
     padding: 0;
     margin: 0;
@@ -60,16 +61,26 @@ export const StyledNav = styled.nav`
     gap: 1rem;
   }
   a {
-    color: inherit;
+    color: ${(props)=> props.theme.title};
     text-decoration: none;
     height: 100%;
     display: flex;
     align-items: center;
     padding: .25rem;
+    width: auto;
+  }
+
+  li{
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    background-color: ${(props)=> props.theme.header};
+  
   }
 
   li.active {
-    background-color: ${(props)=> props.theme.active};
+    background-color: ${(props)=> props.theme.body};
+
   }
 
   li:hover {
@@ -84,10 +95,45 @@ export const MainContainer = styled.div`
   position: fixed;
   left: 0;
   top: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: 20px;
   box-sizing: border-box;
-  color: ${(props)=> props.theme.font}
+  color: ${(props)=> props.theme.font};
 `;
+
+
+export const StyledCards = styled.div`
+.card-container {
+  width: 300px;
+  overflow: hidden;
+  box-shadow: 0px 9px 15px -5px;
+  transition: 0.3s;
+  animation: ease-in;
+  background-color: ${(props)=> props.theme.header};
+}
+
+.card-container:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 9px 15px 0px;
+
+}
+
+.image-container img {
+  overflow: hidden;
+  height: 200px;
+}
+
+.card-content {
+  margin: 1rem;
+  margin-top: 0.3rem;
+}
+
+h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+.card-title {
+  margin-bottom: 0.5rem;
+}
+
+`
