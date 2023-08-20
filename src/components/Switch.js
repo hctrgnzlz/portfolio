@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./Switch.css";
 import PowerIcon from "../assets/PowerIcon";
 
 
@@ -10,7 +9,6 @@ function Switch({toggleTheme, isDarkTheme}) {
     setIsToggled(!isToggled);
     toggleTheme();
   };
-
   return (
     <>
     <label className="toggle-switch">

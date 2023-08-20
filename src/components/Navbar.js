@@ -4,7 +4,7 @@ import { Title } from "./styles/global.styled";
 
 export default function Navbar(){
   return <StyledNav>
-    <Link to="/" className="site-title"> <Title>HTCR </Title> </Link>
+    <Link to="/" className="site-title"> <Title>hctr ></Title> </Link>
     <ul>
     
       <CustomLink to="/">Home</CustomLink>

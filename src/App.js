@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 import Work from "./pages/Work";
 import { Route, Routes } from "react-router-dom";
 import { useState } from "react";
-import { StyledApp, darkTheme, lightTheme } from "./components/styles/global.styled";
+import { StyledApp, SwitchContainer, darkTheme, lightTheme } from "./components/styles/global.styled";
 
 
 function App() {
@@ -26,9 +26,9 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/work" element={<Work />} />
           </Routes>
-       <div className="container">
-        <Switch toggleTheme={toggleTheme} isDarkTheme={isDarkTheme} />
-        </div>
+          <SwitchContainer>
+            <Switch toggleTheme={toggleTheme} isDarkTheme={isDarkTheme} />
+        </SwitchContainer>
       </StyledApp>
     </ThemeProvider>
   </>

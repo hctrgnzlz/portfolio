@@ -1,31 +1,18 @@
-import { Title, MainContainer } from "../components/styles/global.styled";
+import { ImgContainer, MainContainer } from "../components/styles/global.styled";
+import Splash from "../assets/computer.jpg"
+import { TabTitle } from "../components/GeneralFunctions";
+
 
 
 export default function Home() {
-  var title = String.raw`
-
-  ██╗      ██████╗ ██████╗ ███████╗███╗   ███╗    
-  ██║     ██╔═══██╗██╔══██╗██╔════╝████╗ ████║    
-  ██║     ██║   ██║██████╔╝█████╗  ██╔████╔██║    
-  ██║     ██║   ██║██╔══██╗██╔══╝  ██║╚██╔╝██║    
-  ███████╗╚██████╔╝██║  ██║███████╗██║ ╚═╝ ██║    
-  ╚══════╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝╚═╝     ╚═╝    
-                                                  
-  ██╗██████╗ ███████╗██╗   ██╗███╗   ███╗         
-  ██║██╔══██╗██╔════╝██║   ██║████╗ ████║         
-  ██║██████╔╝███████╗██║   ██║██╔████╔██║         
-  ██║██╔═══╝ ╚════██║██║   ██║██║╚██╔╝██║         
-  ██║██║     ███████║╚██████╔╝██║ ╚═╝ ██║         
-  ╚═╝╚═╝     ╚══════╝ ╚═════╝ ╚═╝     ╚═╝         
-                                                  
-  
-`;
+  TabTitle('hctr > home');
   return <>
-  
   <MainContainer>
-  <pre>{title}</pre>
-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et aliquam turpis. Etiam ut augue aliquam, fermentum justo varius, ullamcorper sem. Donec accumsan vitae lacus volutpat maximus. Nulla efficitur efficitur velit, eget feugiat ipsum hendrerit non. In tristique nulla sit amet dolor varius consectetur. Vestibulum consectetur turpis ut tortor posuere, id dictum velit elementum. Vivamus sodales non leo et eleifend. In non nisi dolor. Nunc pharetra luctus tellus, nec pulvinar ex rhoncus at.
+  <ImgContainer>
+    <img src={Splash} className="computer" alt="Vintage Computer"/>  
+  </ImgContainer>
+    <p>Hello, I'm Hector Gonzalez. </p>
+    <p>I'm a frontend developer and project manager currently working at Agile Humanites.  </p>
   </MainContainer>  
 </>
 }

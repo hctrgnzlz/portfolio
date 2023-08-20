@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
-
+//THEMES: DARK & LIGHT//
 export const darkTheme = {
   body: "#282828",
   header: "#3c3836",
   title: "#ebdbb2",
   subtitle: "#b6b6b6",
-  icon: "#b6b6b6",
+  icon: "#bdae93",
   active: "blue",
   font: "#bdae93",	
 }
@@ -16,35 +16,65 @@ export const lightTheme = {
   header: "#ebdbb2",
   title: "#3c3836",
   subtitle: "#333",
-  icon: "#282828",
+  icon: "#665c54",
   active: "yellow",
   font: "#665c54",
 }
 
-
+//GENERAL PAGE STYLES//
 export const StyledApp = styled.div` 
   text-align: center;
   text-align: center;
   background-color: ${(props)=> props.theme.body};
   height: 100vh;
   transition: all 0.25s ease;
+  font-family: 'Fira Code', monospace;
+  overflow-y: auto;
 
 `;
 
 
-export const Title = styled.h1`
-  margin: 1rem;
+//CONTAINER STYLES//
+export const MainContainer = styled.div` 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 50px;
+  padding: 20px;
+  margin-top: 50px;
+  box-sizing: border-box;
+  color: ${(props)=> props.theme.font};
+`;
+
+// IMAGE CONTAINER STYLES//
+
+export const ImgContainer = styled.div` 
+  height: 350px;
+  width: 350px;
+  margin-top: 50px;
+
+  .computer {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+  }
+`;
+
+
+
+//TITLE STYLES//
+export const Title = styled.div`
   color: ${(props)=> props.theme.title};
+  font-weight: bold;
+  font-size: 1.125rem;
 `;
 
-export const Info = styled.p`
-  margin: 1rem;
-  color: ${(props)=> props.theme.subtitle}
-`;
-
-
+//NAVIGATION STYLES//
 export const StyledNav = styled.nav` 
-  color: white;
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: stretch;
@@ -52,7 +82,7 @@ export const StyledNav = styled.nav`
   gap: 2rem;
   padding: 0 1rem;
   height: 50px;
-    
+      
   ul {
     padding: 0;
     margin: 0;
@@ -68,6 +98,7 @@ export const StyledNav = styled.nav`
     align-items: center;
     padding: .25rem;
     width: auto;
+    font-size: 1.05rem;
   }
 
   li{
@@ -89,18 +120,8 @@ export const StyledNav = styled.nav`
 
 `;
 
-export const MainContainer = styled.div` 
-  width: 40%;
-  min-width: 300px; 
-  position: fixed;
-  left: 0;
-  top: 50px;
-  padding: 20px;
-  box-sizing: border-box;
-  color: ${(props)=> props.theme.font};
-`;
 
-
+//CARD STYLES//
 export const StyledCards = styled.div`
 .card-container {
   width: 300px;
@@ -117,9 +138,15 @@ export const StyledCards = styled.div`
 
 }
 
+.image-container{
+  height: 250px
+}
+
 .image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   overflow: hidden;
-  height: 200px;
 }
 
 .card-content {
@@ -135,5 +162,17 @@ h3, p {
 .card-title {
   margin-bottom: 0.5rem;
 }
-
 `
+
+// SWITCH CONTAINER//
+export const SwitchContainer = styled.div`
+   margin: 1rem;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  .toggle-switch input[type="checkbox"] {
+    display: none;
+  }
+`;
