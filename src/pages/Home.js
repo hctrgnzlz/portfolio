@@ -5,7 +5,7 @@ import { TabTitle } from "../components/GeneralFunctions";
 
 
 export default function Home() {
-  TabTitle('hctr > home');
+  TabTitle('Hector Gonzalez | Home');
   return <>
   <MainContainer>
   <ImgContainer>

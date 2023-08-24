@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import PowerIcon from "../assets/PowerIcon";
+import LightBulb from "../assets/LightBulb";
 
 
 function Switch({toggleTheme, isDarkTheme}) {
@@ -13,7 +13,7 @@ function Switch({toggleTheme, isDarkTheme}) {
     <>
     <label className="toggle-switch">
       <input type="checkbox" checked={isToggled} onChange={onToggle} />
-      <PowerIcon/>
+      <LightBulb/>
     </label>
     </>
   );

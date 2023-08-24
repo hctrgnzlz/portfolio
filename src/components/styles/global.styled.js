@@ -88,8 +88,13 @@ export const StyledNav = styled.nav`
     margin: 0;
     list-style: none;
     display: flex;
-    gap: 1rem;
+    margin-right: 100px;
+
+    @media only screen and (max-width: 600px) {
+      margin-right: 0;
+    }
   }
+
   a {
     color: ${(props)=> props.theme.title};
     text-decoration: none;
@@ -102,7 +107,7 @@ export const StyledNav = styled.nav`
   }
 
   li{
-    width: 80px;
+    width: 100px;
     display: flex;
     justify-content: center;
     background-color: ${(props)=> props.theme.header};
@@ -116,6 +121,23 @@ export const StyledNav = styled.nav`
 
   li:hover {
     background-color: ${(props)=> props.theme.hover};
+  }
+
+  .site-title:hover::after {
+    content: "  █";
+    display: inline;
+    animation: blink-animation 1s infinite;
+    padding-left: 10px;
+    padding-bottom: 4px;
+      
+    @keyframes blink-animation {
+    0%, 50%, 100% {
+    opacity: 1;
+    }
+    25%, 75% {
+    opacity: 0;
+    }
+  }
   }
 
 `;
@@ -166,7 +188,7 @@ h3, p {
 
 // SWITCH CONTAINER//
 export const SwitchContainer = styled.div`
-   margin: 1rem;
+  margin: 2rem;
   text-align: center;
   position: absolute;
   bottom: 0;
@@ -176,3 +198,4 @@ export const SwitchContainer = styled.div`
     display: none;
   }
 `;
+
