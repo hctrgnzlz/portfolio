@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.fefe1513.css","mappings":"AAAA,EACE,qBACF,CAEA,KACE,QACF","sources":["components/styles/styles.css"],"sourcesContent":["* {\n  box-sizing: border-box;\n}\n\nbody {\n  margin: 0;\n}\n\n"],"names":[],"sourceRoot":""}
