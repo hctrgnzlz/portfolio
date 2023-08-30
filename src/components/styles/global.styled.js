@@ -5,9 +5,9 @@ export const darkTheme = {
   body: "#282828",
   header: "#3c3836",
   title: "#ebdbb2",
-  subtitle: "#b6b6b6",
+  highlight: "#7c6f64",
+  highlighted: "#fbf1c7",
   icon: "#bdae93",
-  active: "blue",
   font: "#bdae93",	
 }
 
@@ -15,14 +15,19 @@ export const lightTheme = {
   body: "#fbf1c7",
   header: "#ebdbb2",
   title: "#3c3836",
-  subtitle: "#333",
+  highlight: "#a89984",
+  highlighted: "#282828",
   icon: "#665c54",
-  active: "yellow",
   font: "#665c54",
 }
 
 //GENERAL PAGE STYLES//
+
 export const StyledApp = styled.div` 
+  ::selection {
+    background:  ${(props)=> props.theme.highlight};
+    color:  ${(props)=> props.theme.highlighted};
+  }
   text-align: center;
   text-align: center;
   background-color: ${(props)=> props.theme.body};
@@ -30,6 +35,8 @@ export const StyledApp = styled.div`
   transition: all 0.25s ease;
   font-family: 'Fira Code', monospace;
   overflow-y: auto;
+  font-size: 16px;
+  box-sizing: border-box;
 
 `;
 
@@ -40,19 +47,18 @@ export const MainContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  top: 50px;
-  padding: 20px;
-  margin-top: 50px;
+  margin-top: 100px;
   box-sizing: border-box;
   color: ${(props)=> props.theme.font};
+  
+
 `;
 
-// IMAGE CONTAINER STYLES//
 
+// IMAGE CONTAINER STYLES//
 export const ImgContainer = styled.div` 
   height: 350px;
   width: 350px;
-  margin-top: 50px;
 
   .computer {
     width: 100%;
@@ -82,6 +88,7 @@ export const StyledNav = styled.nav`
   gap: 2rem;
   padding: 0 1rem;
   height: 50px;
+  z-index: 1;
       
   ul {
     padding: 0;
@@ -140,40 +147,124 @@ export const StyledNav = styled.nav`
   }
   }
 
-`;
+`
+
+export const StyledContainer = styled.div`
+.home-container {
+  width: 400px;
+  overflow: hidden;
+  transition: 0.3s;
+  animation: ease-in;
+  background-color: ${(props)=> props.theme.body};
+  
+  @media only screen and (max-width: 600px) {
+    width: 250px;
+  }  
+}
+
+
+.home-image-container{
+  position: relative;
+  display: inline-block;
+}
+
+.home-image-container img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  transition: filter 0.3s;
+
+}
+
+
+.home-content {
+  margin-top: 0.3rem;
+  border-bottom: 2px dashed ${(props)=> props.theme.font};
+  border-top: 2px dashed ${(props)=> props.theme.font}
+  
+}
+
+
+`
 
 
 //CARD STYLES//
 export const StyledCards = styled.div`
 .card-container {
-  width: 300px;
+  width: 400px;
   overflow: hidden;
-  box-shadow: 0px 9px 15px -5px;
   transition: 0.3s;
   animation: ease-in;
   background-color: ${(props)=> props.theme.header};
+
+  margin-top: 10px;
+  
+  @media only screen and (max-width: 600px) {
+    width: 250px;
+  }  
 }
 
-.card-container:hover {
-  transform: scale(1.1);
-  box-shadow: 0px 9px 15px 0px;
-
+.line {
+  display: block;
+  border-top: 2px dashed ${(props)=> props.theme.font};
+  margin: 2em 0;
+  padding: 0;
 }
 
 .image-container{
-  height: 250px
+  position: relative;
+  display: inline-block;
 }
 
 .image-container img {
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
   object-fit: cover;
   overflow: hidden;
+  transition: filter 0.3s;
+
+}
+
+.image-container:hover img {
+  filter: blur(2px);
+}
+
+.image-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px 20px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container:hover .image-overlay {
+  opacity: 1;
 }
 
 .card-content {
   margin: 1rem;
   margin-top: 0.3rem;
+  
+}
+
+.card-title {
+  margin-bottom: .5rem;
+  
+}
+
+.language {
+  font-weight: 300;
+  margin-bottom: .5rem;
 }
 
 h3, p {
@@ -181,21 +272,23 @@ h3, p {
   padding: 0;
 }
 
-.card-title {
-  margin-bottom: 0.5rem;
-}
 `
 
 // SWITCH CONTAINER//
 export const SwitchContainer = styled.div`
-  margin: 2rem;
+  
   text-align: center;
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: 10px;
+  right: 20px;
+
+  @media only screen and (max-width: 600px) {
+    right: 10px;
+  }
+  
 
   .toggle-switch input[type="checkbox"] {
     display: none;
   }
-`;
+`
 
