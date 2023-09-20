@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.fefe1513.css",
-    "main.js": "/portfolio/static/js/main.6fce66f3.js",
-    "static/media/computer.jpg": "/portfolio/static/media/computer.29929c815be36dbe0eec.jpg",
-    "static/media/october27.jpg": "/portfolio/static/media/october27.86cca58b077dab5ecf35.jpg",
-    "static/media/pathways.jpg": "/portfolio/static/media/pathways.5696aa8da94924081ce2.jpg",
-    "static/media/cinemobilia.jpg": "/portfolio/static/media/cinemobilia.a18e077301893d13f915.jpg",
-    "static/media/sackson.jpg": "/portfolio/static/media/sackson.0e8007ffe1b27027f871.jpg",
-    "index.html": "/portfolio/index.html",
-    "main.fefe1513.css.map": "/portfolio/static/css/main.fefe1513.css.map",
-    "main.6fce66f3.js.map": "/portfolio/static/js/main.6fce66f3.js.map"
+    "main.css": "/static/css/main.fefe1513.css",
+    "main.js": "/static/js/main.6f1e890c.js",
+    "static/media/computer.jpg": "/static/media/computer.29929c815be36dbe0eec.jpg",
+    "static/media/october27.jpg": "/static/media/october27.86cca58b077dab5ecf35.jpg",
+    "static/media/pathways.jpg": "/static/media/pathways.5696aa8da94924081ce2.jpg",
+    "static/media/cinemobilia.jpg": "/static/media/cinemobilia.a18e077301893d13f915.jpg",
+    "static/media/sackson.jpg": "/static/media/sackson.0e8007ffe1b27027f871.jpg",
+    "index.html": "/index.html",
+    "main.fefe1513.css.map": "/static/css/main.fefe1513.css.map",
+    "main.6f1e890c.js.map": "/static/js/main.6f1e890c.js.map"
   },
   "entrypoints": [
     "static/css/main.fefe1513.css",
-    "static/js/main.6fce66f3.js"
+    "static/js/main.6f1e890c.js"
   ]
 }
