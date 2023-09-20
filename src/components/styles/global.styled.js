@@ -304,7 +304,7 @@ export const SwitchContainer = styled.div`
     font-size: 10px;
     padding: 0;
     margin: 0;
-    text-align: right;
+    text-align: center;
   }
 
   @media only screen and (max-width: 600px) {

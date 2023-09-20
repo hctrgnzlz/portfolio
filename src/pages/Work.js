@@ -29,7 +29,7 @@ export default function Work() {
     title='CineMobilia'
     image= {Cinemobilia}
     languages= 'Programs/Languagues: Drupal, Docker, Adobe Illustrator, PHP, JavaScript, SASS, Web Components, Git, Beanstalk'
-    body='CineMobilia is a nonprofit mobile media digitisation lab dedicated to providing a mobile infrastructure for archiving and presenting archives from marginalized communities in Canada.'
+    body='CineMobilia is a nonprofit mobile media digitization lab dedicated to providing a mobile infrastructure for archiving and presenting archives from marginalized communities in Canada.'
     url='https://cinemobilia.ca/'/>
 
   <Card
