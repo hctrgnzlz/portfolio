@@ -11,7 +11,7 @@ export default function HomePage(){
       </div>
       <div className="home-content">
           <p>Hello, I'm Hector Gonzalez. I'm a frontend developer who enjoys retro and minimalist design. 
-          I currently develop websites along with graphic design for <a href="https://agilehumanities.ca/">Agile Humanites.</a></p>
+          I currently develop websites and create graphics for <a href="https://agilehumanities.ca/">Agile Humanites.</a></p>
       </div>
       <div className="home-links">
       <SocialMedia/>

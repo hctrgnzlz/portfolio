@@ -15,7 +15,7 @@ export default function Work() {
     title='The October 27th Archive'
     image={October27}
     languages= 'Programs/Languagues: Drupal, Docker, Adobe Illustrator, PHP, JavaScript, SASS, Web Components, Git, Beanstalk'
-    body='The October 27 Archive collects responses to an antisemitic attack in Pittsburgh, Pa. on October 27, 2018.'
+    body='The October 27 Archive collects responses to an antisemitic attack in Pittsburgh, Pennsylvania. on October 27, 2018.'
     url='https://october27archive.org/'/>
 
   <Card
