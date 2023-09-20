@@ -52,6 +52,7 @@ export const StyledApp = styled.div`
   overflow-y: auto;
   font-size: 16px;
   box-sizing: border-box;
+  
 
 `;
 
@@ -294,7 +295,7 @@ export const StyledCards = styled.div`
 export const SwitchContainer = styled.div`
   
   text-align: center;
-  position: absolute;
+  position: fixed;
   bottom: 10px;
   right: 25px;
   width: 50px;
