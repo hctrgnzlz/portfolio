@@ -26,18 +26,20 @@ export default function Work() {
     url='https://cinemobilia.ca/'/>
 
   <Card
+    title='Pathways to Diversity'
+    image= {Pathways}
+    languages= 'Programs/Languagues: Omeka, Adobe Illustrator, PHTML, JavaScript, SASS, Git, Beanstalk'
+    body='A collection of documents, images, stories, and artifacts related to the desegregation of the campuses in  Centre College, Furman University, Rollins College, and Washington and Lee University.'
+    url='https://omeka.centre.edu/s/pathways/'/>
+
+  <Card
     title='The Sid Sackson Portal'
     image= {Sackson}
     languages= 'Programs/Languagues: Omeka, PHTML, Adobe Illustrator, JavaScript, SASS, Git, Beanstalk'
     body="A digital collection of Sid Sacksons diaries and life work in Game Design."
     url='https://sacksonportal.museumofplay.org/s/sackson-portal/page/welcome'/>
  
-  <Card
-    title='Pathways to Diversity'
-    image= {Pathways}
-    languages= 'Programs/Languagues: Omeka, Adobe Illustrator, PHTML, JavaScript, SASS, Git, Beanstalk'
-    body='A collection of documents, images, stories, and artifacts related to the desegregation of the campuses in  Centre College, Furman University, Rollins College, and Washington and Lee University.'
-    url='https://omeka.centre.edu/s/pathways/'/>
+ 
 
 </StyledContainer>
   
