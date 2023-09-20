@@ -1,5 +1,5 @@
-import { MainContainer } from "../components/styles/global.styled";
-import Container from "../components/HomeContainer";
+import { StyledContainer } from "../components/styles/global.styled";
+import HomePage from "../components/HomeContainer";
 import { TabTitle } from "../components/GeneralFunctions";
 
 
@@ -7,9 +7,9 @@ import { TabTitle } from "../components/GeneralFunctions";
 export default function Home() {
   TabTitle('Hector Gonzalez | Home');
   return <>
-  <MainContainer>
-    <Container/>
-  </MainContainer>  
+  <StyledContainer>
+    <HomePage/>
+  </StyledContainer>  
 </>
 }
 

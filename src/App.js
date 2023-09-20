@@ -28,6 +28,8 @@ function App() {
           </Routes>
           <SwitchContainer>
             <Switch toggleTheme={toggleTheme} isDarkTheme={isDarkTheme} />
+            <p>© Hector Gonzalez 2023</p>
+            
         </SwitchContainer>
       </StyledApp>
     </ThemeProvider>

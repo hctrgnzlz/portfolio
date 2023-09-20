@@ -18,8 +18,8 @@ export default function Card({title, image, body, url, languages}){
           <h3>{title}</h3>
         </div>
         <div className="card-body">
-          <p className="language">{languages}</p>
           <p>{body}</p>
+          <p className="language">{languages}</p>
         </div>
       </div>
     </div>
