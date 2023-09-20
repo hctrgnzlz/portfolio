@@ -19,6 +19,13 @@ export default function Work() {
     url='https://october27archive.org/'/>
 
   <Card
+    title='Pathways to Diversity'
+    image= {Pathways}
+    languages= 'Programs/Languagues: Omeka, Adobe Illustrator, PHTML, JavaScript, SASS, Git, Beanstalk'
+    body='A collection of documents, images, stories, and artifacts related to the desegregation of the campuses in  Centre College, Furman University, Rollins College, and Washington and Lee University.'
+    url='https://omeka.centre.edu/s/pathways/'/>
+
+  <Card
     title='CineMobilia'
     image= {Cinemobilia}
     languages= 'Programs/Languagues: Drupal, Docker, Adobe Illustrator, PHP, JavaScript, SASS, Web Components, Git, Beanstalk'
@@ -32,16 +39,6 @@ export default function Work() {
     body="A digital collection of Sid Sacksons diaries and life work in Game Design."
     url='https://sacksonportal.museumofplay.org/s/sackson-portal/page/welcome'/>
 
-  <Card
-    title='Pathways to Diversity'
-    image= {Pathways}
-    languages= 'Programs/Languagues: Omeka, Adobe Illustrator, PHTML, JavaScript, SASS, Git, Beanstalk'
-    body='A collection of documents, images, stories, and artifacts related to the desegregation of the campuses in  Centre College, Furman University, Rollins College, and Washington and Lee University.'
-    url='https://omeka.centre.edu/s/pathways/'/>
-
-
- 
- 
 
 </StyledContainer>
   
