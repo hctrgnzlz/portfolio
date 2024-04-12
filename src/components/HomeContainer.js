@@ -10,8 +10,7 @@ export default function HomePage(){
         <img src={Splash} className="computer" alt="Vintage Computer"/>  
       </div>
       <div className="home-content">
-          <p>Hello, I'm Hector Gonzalez. I'm a frontend developer who enjoys retro and minimalist design. 
-          I currently develop websites and create graphics for <a href="https://agilehumanities.ca/">Agile Humanites.</a></p>
+          <p>Hello, I'm Hector Gonzalez. I'm a frontend developer who enjoys retro and minimalist design. </p>
       </div>
       <div className="home-links">
       <SocialMedia/>
